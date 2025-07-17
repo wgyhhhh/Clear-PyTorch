@@ -1,3 +1,5 @@
+教程正在实时更新中，欢迎大家阅读并提出issues，https://wgyhhhh.github.io/Clear-PyTorch/
+
 <div align='center'>
     <img src="./cover.png" alt="alt text" width="100%">
     <h1>Clear_PyTorch</h1>
