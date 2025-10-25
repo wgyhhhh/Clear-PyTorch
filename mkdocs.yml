@@ -103,23 +103,23 @@ nav:
   - 第一章 入门PyTorch:
     - PyTorch的安装: 'Chapter-1/1-1PyTorch.md'
     - Jupter Notebook的安装: 'Chapter-1/1-2Jupyter.md'
-    - 一个简单的神经网络: 'Chapter-1/1-3network.md'
+    - 一个简单的神经网络: 'Chapter-1/1-3.ipynb'
   - 第二章 张量的基本操作:
-    - 2.1-张量介绍: 'Chapter-2/2-1.md'
-    - 2.2-张量的创建与维度变换: 'Chapter-2/2-2.ipynb'
-    - 2.3-张量的运算: 'Chapter-2/2-3.ipynb'
-
+    - 2.1 张量介绍: 'Chapter-2/2-1.md'
+    - 2.2 张量的创建与维度变换: 'Chapter-2/2-2.ipynb'
+    - 2.3 张量的运算: 'Chapter-2/2-3.ipynb'
+    - 2.4 PyTorch中的模块: 'Chapter-2/2-4.ipynb'
 plugins:
     - mkdocs-jupyter
 
-markdown_extensions: #详见https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/ 和 https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/
+markdown_extensions:
   - abbr
   - attr_list
   - admonition
   - def_list
   - footnotes
   - md_in_html
-  - meta # 支持Markdown文件上方自定义标题标签等
+  - meta
   - pymdownx.caret
   - pymdownx.betterem
   - pymdownx.critic
@@ -134,39 +134,35 @@ markdown_extensions: #详见https://squidfunk.github.io/mkdocs-material/setup/ex
       custom_fences:
         - name: mermaid
           class: mermaid
-          format:
-            !!python/name:pymdownx.superfences.fence_code_format # 代码块高亮插件
-  - pymdownx.arithmatex: # latex支持
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.arithmatex:
       generic: true
   - toc:
-      permalink: true # 固定标题位置为当前位置
-  - pymdownx.highlight: # 代码块高亮
+      permalink: true
+  - pymdownx.highlight:
       anchor_linenums: true
-      linenums: true # 显示行号
-      # auto_title: true # 显示编程语言名称
+      linenums: true
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
 
 extra_javascript:
-  # - javascripts/extra.js #自定义javascript
-  - https://Xiaokang2022.github.io/maliang/js/click-colorful.js # 鼠标点击效果
-  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js  # extra的cdn
-  #- https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js #Latex支持
-  - https://polyfill.io/v3/polyfill.min.js?features=es6 #Latex支持
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js #Latex支持
-  # - ckplayer/js/ckplayer.js #播放器配置
-  # - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js  #gitalk支持
-  - https://cdn.jsdelivr.net/npm/mermaid@10.0.2/dist/add-html-label-6e56ed67.min.js #忘了
+  # 鼠标点击效果
+  - https://Xiaokang2022.github.io/maliang/js/click-colorful.js
+  # extra的cdn
+  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js
+  # MathJax 支持（只保留一份）
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  # 其他脚本
+  - https://cdn.jsdelivr.net/npm/mermaid@10.0.2/dist/add-html-label-6e56ed67.min.js
   - javascripts/extra.js
-  - javascripts/mathjax.js #MathJax配置
-  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
-
+  - javascripts/mathjax.js
 
 extra_css:
-  - css/misc.css #自定义css
-  #- css/custom.css
+  - css/misc.css
   - stylesheets/extra.css
+
 extra_templates:
   - sitemap.xml

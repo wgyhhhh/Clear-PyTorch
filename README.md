@@ -30,7 +30,7 @@
 | 章节 | 关键内容 | 状态 |
 | --- | --- | --- |
 | [第一章 前期准备] | PyTorch安装、基础知识简要、环境配置、 | ✅ |
-| [第二章 PyTorch进阶1] | 维度变换、自动微分、Tensor结构 | ❌ |
+| [第二章 PyTorch进阶1] | 张量的创建、张量的运算、PyTorch中的模块 | ❌ |
 | [第三章 PyTorch进阶2] | TensorBoard、Transforms、GPU加速 | ❌ |
 | [第四章 PyTorch进阶3] | nn.Module类、优化器、激活函数 | ❌ |
 | [第五章 PyTorch进阶4] | 向量化思想、并行计算、高级索引 | ❌ |
